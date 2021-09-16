@@ -5,58 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style2.css">
+    <link rel="shortcut icon" href="./img/waterfall.png" type="image/x-icon">
 
     <title>Cadastro</title>
 </head>
 <body>
-    <form action="#">
-        <fieldset>
-            <legend>Dados pessoais: </legend>
-            <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" placeholder="seuemail@email.com">
-            <label for="telefone">Telefone: </label>
-            <input type="tel" name="telefone" id="telefone" placeholder="123-456-7890">
-            <label for="dataNascimento">Data de nascimento: </label>
-            <input type="date" id="dataNascimento" name="dataNascimento" value="2018-07-22"
-                   min="1930-01-01" max="2020-12-31">
-            <legend>Você é maior de idade?</legend>
-            <input type="radio" name="maiorIdade" id="maiorIdade" required>
-            <label for="maiorIdade">Sim</label>
-            <input type="radio" name="menorIdade" id="menorIdade" required>
-            <label for="menorIdade">Não</label>
-        </fieldset>
-        <fieldset>
-            <legend>Informações extras: </legend>
-            <legend>Pontos turísticos que quer visitar: </legend>
-            <input type="checkbox" name="cataratas" id="cataratas">
-            <label for="cataratas">Cataratas do Iguaçu</label>
-            <input type="checkbox" name="itaipu" id="itaipu">
-            <label for="itaipu">Itaipu</label>
-            <input type="checkbox" name="parqueAves" id="parqueAves">
-            <label for="parqueAves">Parque das Aves</label>
-            <input type="checkbox" name="museuCera" id="museuCera">
-            <label for="museuCera">Museu de cera</label>
-            <input type="checkbox" name="barGelo" id="barGelo">
-            <label for="barGelo">Bar de gelo</label>
-            <input type="checkbox" name="cde" id="cde">
-            <label for="cde">Ciudad del Este</label>
-            <input type="checkbox" name="pi" id="pi">
-            <label for="pi">Puerto Iguazú</label>
-            <legend>Interesses na cidade: </legend>
-            <input type="checkbox" name="turista" id="turista">
-            <label for="turista">Turista</label>
-            <input type="checkbox" name="residente" id="residente">
-            <label for="residente">Residente</label>
-            <input type="checkbox" name="estudante" id="estudante">
-            <label for="estudante">Estudante</label>
-            <input type="checkbox" name="outro" id="outro">
-            <label for="outro">Outro</label>
-        </fieldset>
-        <button type="submit">Enviar</button>
-        <button type="reset">Cancelar</button>
-    </form>
-    
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Bras%C3%A3o_de_Armas_do_Munic%C3%ADpio_de_Foz_do_Igua%C3%A7u.png" alt="">
+    </div>
+    <div class="formulario">
+        <form action="#">
+            <fieldset>
+                <legend>Dados pessoais: </legend>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone" id="telefone" placeholder="123-456-7890">
+                <label for="dataNascimento">Data de nascimento: </label>
+                <input type="date" id="dataNascimento" name="dataNascimento" value="2018-07-22"
+                       min="1930-01-01" max="2020-12-31">
+                <legend>Você é maior de idade?</legend>
+                <div class="maioridade">
+                    <input type="radio" name="maioridade" id="maiorIdade">
+                    <label for="maiorIdade">Sim</label>
+                    <input type="radio" name="maioridade" id="menorIdade">
+                    <label for="menorIdade">Não</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Pontos Turísticos: </legend>
+                <select name="turistando" id="turistando">
+                    <option value="" disabled>Ponto turístico que quer visitar:</option>
+                    <optgroup label="Brasil">
+                        <option value="cataratas">Cataratas do Iguaçu</option>
+                        <option value="itaipu">Itaipu</Iption>
+                        <option value="parqueAves">Parque das Aves</option>
+                        <option value="museuCera">Museu de cera</option>
+                        <option value="barGelo">Bar de gelo</option>
+                    <optgroup label="Argentina">
+                        <option value="pi">Puerto Iguazú</option>
+                    </optgroup>
+                    <optgroup label="Paraguai">
+                        <option value="cde">Ciudad del Este</option>
+                    </optgroup>
+                </select>
+                <legend>Interesses na cidade: </legend>
+                <div class="tourist">
+                    <input type="checkbox" name="turista" id="turista">
+                    <label for="turista">Turista</label>
+                    <input type="checkbox" name="residente" id="residente">
+                    <label for="residente">Residente</label>
+                    <input type="checkbox" name="estudante" id="estudante">
+                    <label for="estudante">Estudante</label>
+                    <input type="checkbox" name="outro" id="outro">
+                    <label for="outro">Outro</label>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn-send">Enviar</button>
+            <button type="reset" class="btn-canc">Cancelar</button>
+        </form>
+    </div>
 </body>
 </html>

@@ -17,6 +17,8 @@ header{
 
 #curiosidades{
     color: white;
+    background-color: rgba(79, 146, 201, 0.8);
+    width: 40vw;
 }
 
 ul{
