@@ -43,3 +43,15 @@ ul{
  #video{
      text-align: center;
  }
+
+ #cadastro{
+     text-decoration: none;
+     color: white;
+     background-color: rgb(4, 12, 61);
+     transition: all 0.3s ease-in-out;
+ }
+
+ #cadastro:hover{
+     background-color: rgb(87, 87, 185);
+     color: black;
+ }
