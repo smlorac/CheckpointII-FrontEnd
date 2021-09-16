@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2.css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Dados pessoais: </legend>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="seuemail@email.com">
+            <label for="telefone">Telefone: </label>
+            <input type="tel" name="telefone" id="telefone" placeholder="123-456-7890">
+            <label for="dataNascimento">Data de nascimento: </label>
+            <input type="date" id="dataNascimento" name="dataNascimento" value="2018-07-22"
+                   min="1930-01-01" max="2020-12-31">
+            <legend>Você é maior de idade?</legend>
+            <input type="radio" name="maiorIdade" id="maiorIdade" required>
+            <label for="maiorIdade">Sim</label>
+            <input type="radio" name="menorIdade" id="menorIdade" required>
+            <label for="menorIdade">Não</label>
+        </fieldset>
+        <fieldset>
+            <legend>Informações extras: </legend>
+            <legend>Pontos turísticos que quer visitar: </legend>
+            <input type="checkbox" name="cataratas" id="cataratas">
+            <label for="cataratas">Cataratas do Iguaçu</label>
+            <input type="checkbox" name="itaipu" id="itaipu">
+            <label for="itaipu">Itaipu</label>
+            <input type="checkbox" name="parqueAves" id="parqueAves">
+            <label for="parqueAves">Parque das Aves</label>
+            <input type="checkbox" name="museuCera" id="museuCera">
+            <label for="museuCera">Museu de cera</label>
+            <input type="checkbox" name="barGelo" id="barGelo">
+            <label for="barGelo">Bar de gelo</label>
+            <input type="checkbox" name="cde" id="cde">
+            <label for="cde">Ciudad del Este</label>
+            <input type="checkbox" name="pi" id="pi">
+            <label for="pi">Puerto Iguazú</label>
+            <legend>Interesses na cidade: </legend>
+            <input type="checkbox" name="turista" id="turista">
+            <label for="turista">Turista</label>
+            <input type="checkbox" name="residente" id="residente">
+            <label for="residente">Residente</label>
+            <input type="checkbox" name="estudante" id="estudante">
+            <label for="estudante">Estudante</label>
+            <input type="checkbox" name="outro" id="outro">
+            <label for="outro">Outro</label>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+    
+</body>
+</html>
